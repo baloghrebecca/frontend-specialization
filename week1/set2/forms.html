@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Form Exercise</title>
+  </head>
+  <!-- Names and Values are important to communicate with the server. Both need to be crosschecked with the backend developer. -->
+  <body>
+    <h1>Registration Form</h1>
+    <form action="#">
+      <h3>Basic Data</h3>
+      <label for="fname">
+        First name: <br />
+        <input id="fname" type="text" name="fname" /></label>
+      <br />
+      <label for="lname">
+        Last name: <br />
+        <input id="lname" type="text" name="lname" /></label>
+      <br />
+      <label for="password">
+        Password: <br />
+        <input id="password" type="password" required /></label>
+      <br />
+      <br />
+      <h3>Gender</h3>
+      <!-- The value is sent to the server, so adding a value to every input field is important-->
+      <label for="male">
+        Male <input id="male" type="radio" value="male" name="gender" /></label>
+      <label for="female">
+        Female <input id="female" type="radio" value="female" name="gender" /></label>
+      <label for="x">
+        X <input id="x" type="radio" value="x" name="gender" /></label>
+      <br />
+      <br />
+      <h3>Terms & Conditions</h3>
+      <label for="terms"><input type="checkbox" name="terms-conditions" value="agreed"> Agree to terms of
+        conditions</label><br>
+      <label for="newsletter"><input type="checkbox" name="terms-conditions" value="newsletter" checked> Sign up for the
+        newsletter</label><br>
+      <label for="special"><input type="checkbox" name="terms-conditions" value="special"> Receive special
+        offers</label>
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+
+</html>

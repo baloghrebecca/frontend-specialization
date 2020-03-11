@@ -1,0 +1,17 @@
+//Basic HTML://
+Opening Tag: <a>
+Closing Tag: </a>
+Attribute name: href=
+Attribute value: "www.google.com"
+Content: everything in between opening and closing Tag
+Nesting: a tag within a tag e.g. <a><img src=""></a>
+IMG Alt: is important if the image isn't displayed or for people who are impaired when it comes to hearing
+
+
+//Forms://
+Placeholder: is already inside of the text field. When there is a placeholder there must be a aria-label="First name" for people who are impaired
+Value: this will be checked with the server (backend), so backend communication about the value name is important
+Name: this will also be communicated to the server side. Backend communication is also important in this case. 
+id: is for our document only and not for the server side 
+Required: <input ... required> indicates that this field must be filled out
+Checked: this radio/checkbox is already checked before the user interacts 
