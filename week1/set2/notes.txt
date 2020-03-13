@@ -11,7 +11,9 @@ IMG Alt: is important if the image isn't displayed or for people who are impaire
 //Forms://
 Placeholder: is already inside of the text field. When there is a placeholder there must be a aria-label="First name" for people who are impaired
 Value: this will be checked with the server (backend), so backend communication about the value name is important
+        but also value in a textbox is different. It's something that acts a bit like a placeholder, something that is already filled out for the user. 
 Name: this will also be communicated to the server side. Backend communication is also important in this case. 
 id: is for our document only and not for the server side 
 Required: <input ... required> indicates that this field must be filled out
 Checked: this radio/checkbox is already checked before the user interacts 
+
