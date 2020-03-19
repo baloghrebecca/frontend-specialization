@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,400,400i&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: white;
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: 400;
+    z-index: -1;
+    font-size: 14pt;
+    margin: 0;
+}
+
+/* Header Area */
+
+header {
+    text-align: center;
+    margin: auto;
+}
+
+#title {
+    font-size: 25pt;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#description {
+    font-size: 14pt;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 0px 1px #000000;
+}
+
+/* Form */
+
+main {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+form {
+    margin-bottom: 0;
+    border-radius: 5px;
+    padding: 40px;
+    background-color: rgba(27, 27, 50, 0.8);
+}
+
+.optional {
+    font-size: 10pt;
+}
+
+.form-element p {
+    margin: 0 0 5px 0;
+}
+
+.form-element {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    /* This vertically centers the text*/
+    align-items: center;
+}
+
+.field {
+    width: 100%;
+    margin: 0;
+    border-radius: 3px;
+    padding: 10px 0 10px 10px;
+    font-size: 12pt;
+    font-family: Poppins, sans-serif;
+    color: #495057;
+    height: 40px;
+    border: solid gray 1px;
+}
+
+::placeholder {
+    font-size: 12pt;
+    font-family: Poppins, sans-serif;
+    color: dimgray;
+}
+
+textarea {
+    width: 100%;
+    margin: 0;
+    border-radius: 3px;
+    padding: 10px 0 10px 10px;
+    font-size: 12pt;
+    font-family: Poppins, sans-serif;
+    color: #495057;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 12pt;
+    font-family: Poppins, sans-serif;
+    color: white;
+    background-color: lightseagreen;
+}
+

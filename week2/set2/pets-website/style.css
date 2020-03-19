@@ -1,0 +1,109 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: black;
+    background-color: seashell;
+    text-align: left;
+    font-size: 10pt;
+    padding-top: 70px;
+}
+
+header {
+    padding: 10px;
+    background-color: pink;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    font-size: 12pt;
+    float: left;
+    margin: 0;
+}
+
+header ul {
+    padding: 0;
+    float: right;
+    margin: 0;
+}
+
+header li {
+    font-size: 12pt;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+section {
+    border: solid black 2px;
+    padding: 0 30px 10px 30px;
+    margin-bottom: 50px;
+    /*why does floating make the children overflow my parent?*/
+    overflow: hidden;
+}
+
+main {
+    margin: auto;
+    width: 60%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.photo-and-decription {
+    width: 50%;
+    float: left;
+}
+
+.smaller-padding {
+    padding: 0 20px 10px 20px;
+}
+
+.smaller-padding img, .smaller-padding p {
+    width: 100%;
+    padding: 0 5px 0px 5px;
+    /* Why is it working like this and not with a margin bottom. */
+    margin-top: 10px;
+}
+
+form {
+    width: 60%;
+    margin: auto;
+}
+
+input, button, textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    border: 0;
+    border-bottom: black solid 1px;
+    background-color: transparent;
+    padding: 5px;
+}
+
+button {
+    border: 0;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 11pt;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+::placeholder {
+    font-size: 11pt;
+}
