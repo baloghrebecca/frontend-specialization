@@ -1,0 +1,227 @@
+/* CSS VARIABLES */
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 4px 5px rbga(104, 104, 104, 0.8)
+}
+
+* {
+    box-sizing: border-box;
+    font-family: arial;
+    color: var(--dark);
+}
+
+body {
+    /* Default Font Size is always 16 */
+    background-color: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.btn {
+    background-color: var(--dark);
+    color: var(--light);
+    /* 1rem = 16px (Default Font Size) */
+    padding: 0.6rem 1.4rem;
+    text-decoration: none;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Navigation */
+
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    /* UL has padding by default */
+    padding: 0;
+    /* This removes the bullet points from our list elements */
+    list-style: none;
+    /* This spreafs it apart for 4 different fractions */
+    /* grid-template-columns: repeat(4, 1fr) */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main-nav a {
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+    background: var(--dark);
+    color: var(--light)
+}
+
+/* Top Container */
+
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+}
+
+/* Showcase */
+
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background: url(img/pic1.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--light);
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--light);
+}
+
+/* Top Box */
+
+.top-box {
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.top-box .price {
+    font-size: 2.5rem;
+}
+
+.top-box-a {
+    grid-area: top-box-a;
+}
+
+.top-box-b {
+    grid-area: top-box-b;
+}
+
+/* Boxes */
+
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    /* This will make it more responsive */
+    /* As soon as it grows smaller than 200px it will be put into the next line. It won't grow bigger than 1 fr) */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+    background: var(--primary);
+    text-align: center;
+    /* 1.5rem TOP and BOTTOM and 2rem LEFT and RIGHT */
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+
+/* Info */
+
+.info {
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+
+/* Portfolio */
+
+.portfolio {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+/* Footer */
+
+footer {
+    margin-top: 2rem;
+    background: var(--dark);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    color: var(--light);
+}
+
+/* Media Query */
+
+@media(max-width: 700px) {
+    .top-container {
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b';
+    }
+    
+    .showcase h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-nav ul {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .info .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+}
+
+
+@media(max-width: 500px) {
+    .top-container {
+        grid-template-areas: 
+        'showcase'
+        'top-box-a'
+        'top-box-b';
+    }
+
+}

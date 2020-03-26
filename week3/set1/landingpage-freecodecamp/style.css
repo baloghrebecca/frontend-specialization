@@ -1,0 +1,281 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+:root {
+    --white-background: whitesmoke;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white-background);
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    line-height: 1.2;
+    font-size: 15px;
+}
+
+/* HEADER */
+
+#header-img {
+    /* Setting a minimum width prevents my logo to shrink smaller than 250px */
+    min-width: 250px;
+    max-width: 300px;
+    width: 25%;
+}
+
+#header {
+    /* position fixed with flex box required a width: 100%; or 
+    the right coordinates, otherwise is will take the width of its content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 20px 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-background);
+}
+
+#nav-link {
+    margin-left: 90px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* RESPONSIVE 750 */
+
+@media only screen and (max-width: 750px) {
+    #header {
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+    #nav-link {
+        display: block;
+        margin: 0;
+    }
+    #header-img {
+        margin-bottom: 10px;
+    }
+}
+
+/* HERO */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 73px auto;
+}
+
+@media only screen and (max-width: 750px) {
+    #hero {
+        margin: 145px auto 73px auto;
+    }
+}
+
+#hero h1 {
+    width: 100%;
+    font-size: 17pt;
+    word-wrap: break-word;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email {
+    /* max-width prevents it from growing too big*/
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    text-transform: uppercase;
+    background-color: #f1c40f;
+    border: 0;
+    padding: 5px 15px 5px 15px;
+    font-weight: 900;
+    font-size: 11pt;
+    border-radius: 2px;
+}
+
+
+
+/* MAIN WRAPPER */
+
+main {
+    max-width: 1000px;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+/* MAIN WRAPPER END */
+
+/*SECTION FEATURE */
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.section-wrapper {
+    max-width: 800px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-shrink: 0;
+}
+
+.icon {
+    margin-right: 70px;
+}
+
+/* Icons need to be wrapped into the a div because otherwise it wont apply the 120px for every icon ??? */
+
+/* Alternatively you can add https://fontawesome.com/how-to-use/on-the-web/styling/fixed-width-icons this to your classes. But then it's not aligned on the left... but in the center */
+
+i {
+    width: 30px;
+    color: orange;
+    font-size: 40px;
+}
+
+h2 {
+    margin: 5px 0 5px 0;
+}
+
+p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 750px) {
+    .icon {
+        display: none;
+    }
+}
+
+/*SECTION FEATURE END */
+
+/* Section Video */
+
+.video {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.videoclip {
+    max-width: 560px;
+    height: 315px;
+    width: 100%;
+}
+
+/* Section Video End */
+
+/* Section Prices Start */
+
+.prices-container {
+    max-width: 1300px;
+    margin: 0 0 50px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 0;
+}
+
+.prices {
+    width: calc(100% / 3.15);
+    text-align: center;
+    padding: 0 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.prices h3 {
+    border-radius: 5px;
+    background-color: #ddd;
+    padding: 15px;
+    margin: 0;
+    font-size: 12pt;
+}
+
+.prices h4 {
+    margin: 20px 0 20px 0;
+    font-size: 18pt;
+}
+
+.prices p {
+    padding: 0 27% 0 27%;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.prices button {
+    background-color: #f1c40f;
+    padding: 10px 15px 10px 15px;
+    font-size: 12pt;
+    border: 0;
+}
+
+/* RESPONSIVE  */
+
+@media only screen and (max-width: 1000px) {
+    .prices-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .prices {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}
+
+/* Section Prices End */
+
+/* Footer Container */
+
+.footer-container {
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 20px 20px 0px;
+    background-color: #ddd;
+}
+
+#footer-links {
+    margin-bottom: 10px;
+}
+
+#footer-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#copyright {
+    font-size: 13px;
+    color: gray;
+}
+
+/* Footer Container End */

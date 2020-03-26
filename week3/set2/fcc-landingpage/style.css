@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 200;
+    src: https://fonts.googleapis.com/css?family=Raleway:700&display=swap
+  }
+
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+    --shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white)
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--main-red);
+    /* In Order for the nav buttons to take the full height, it's important to not add a pedding to the parent, but to the buttons */
+    /* padding: 1.3rem; */
+    box-shadow: var(--shadow);
+    z-index: 4;
+}
+
+nav {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-btn {
+    display: block;
+    color: var(--main-white);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    padding: 1.3rem 1.3rem;
+}
+
+.nav-btn:hover {
+    background-color: var(--main-blue);
+}
+
+/* Hero */
+
+#hero {
+    background-color: var(--main-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* padding-top: calc(74px + 10rem);
+    padding-bottom: 10rem; */
+}
+
+h1 {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+h2 {
+    color: var(--main-red);
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Portfolio */
+
+img {
+    width: 100%;
+}
+
+#portfolio {
+    background-color: var(--main-blue);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1.5rem;
+    margin-bottom: 1em;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.p-item {
+    border-radius: 2px;
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+
+.p-item img {
+    height: 350px;
+    width: 100%;
+    /* Cuts the image exactly to the size and does not verzerren it */
+    object-fit: cover;
+}
+
+.p-title {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+h3 {
+    margin: auto;
+    font-family: Raleway, sans-serif;
+    padding-top: 3.5rem;
+    margin-bottom: 2.8rem;
+    font-size: 2.3rem;
+    font-weight: 700;
+    border-bottom: solid 1.5px var(--main-white); 
+    max-width: 640px;
+}
+
+.show-btn {
+    /* Inline Block so you can give it margins */
+    display: inline-block;
+    background-color: var(--main-gray);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 50px 0 70px 0;
+    box-shadow: var(--shadow);
+    border-radius: 2px;
+}
+
+.show-btn i {
+    margin-left: 5px;
+}
+
+/* Contact */
+
+#contact {
+    background-color: var(--main-gray);
+    text-align: center;
+    padding: 6em 0;
+    margin: auto;
+}
+
+.c-heading {
+    font-family: Raleway, sans-serif;
+    font-size: 3.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.c-subheading {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+
+#social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-details {
+    font-size: 1.3rem;
+    margin-left: 3rem;
+}
+
+.contact-details:first-child{
+    margin-left: 0;
+}
+
+/* Footer */
+
+footer {
+    font-weight: 200;
+    font-size: 1.1rem;
+    padding: 3rem;
+    border-top: 4px solid var(--main-red);
+    background-color: var(--main-gray);
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-disclaimer {
+    margin-left: 30px;
+}
+
+.f-disclaimer:first-child {
+    margin-left: 0px;
+}
