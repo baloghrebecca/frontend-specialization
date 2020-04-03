@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Manipulation</title>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <section id="button-section">
+            <h1>Here is something super duper secret</h1>
+            <button id="btn">Show Super Secret</button>
+            <p id="secret" class="invisible">This is a secret.</p>
+        </section>
+        <section class="form-section">
+            <h1>Here is something super duper amazing form</h1>
+            <form id="form" action="#" novalidate>
+                <label for="uname">Username</label>
+                <p id="invalid-user"></p>
+                <input id="uname" type="text" name="uname" required>
+                <label for="password">Password (Must have at least 8 characters)</label>
+                <p id="invalid-password"></p>
+                <input id="password" type="password" name="password" required>
+                <p class="form-questions">What color do you prefer?</p>
+                <p id="invalid-color"></p>
+                <label for="color-black">Black
+                    <input id="color-black" type="radio" name="colors" value="colorBlack"></label>
+                <label for="color-white">White
+                    <input id="color-white" type="radio" name="colors" value="colorWhite"></label>
+                <p class="form-questions">What music do you prefer? (At least 2)</p>
+                <p id="invalid-music"></p>
+                <label for="music-classic">Classic
+                    <input id="music-classic" type="checkbox" name="music" value="musicClassic"></label>
+                <label for="music-rock">Rock
+                    <input id="music-rock" type="checkbox" name="music" value="musicRock"></label>
+                <label for="music-pop">Pop
+                    <input id="music-pop" type="checkbox" name="music" value="musicPop"></label>
+                <label for="music-jazz">Jazz
+                    <input id="music-jazz" type="checkbox" name="music" value="musicJazz"></label>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </body>
+    <!-- JS File -->
+    <script src="main.js"></script>
+
+</html>

@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+#invalid-user,
+#invalid-password,
+#invalid-music,
+#invalid-color {
+    padding-top:0;
+    margin-top: 0;
+    color: red;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+#secret {
+    display: none;
+    padding: 20px;
+    color: navy;
+    display: none;
+    background-color: teal;
+}
+
+.form-questions {
+    margin-bottom: 10px;
+}
+
+[type=submit] {
+    display: block;
+    margin-top: 20px;
+}
+
+[type=radio], [type=checkbox] {
+    margin-right: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 40px;
+    background-color: seashell;
+}
