@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Blog</title>
+          <!-- Font Import -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet">
+          <!-- Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css" class="stylesheet">
+    </head>
+
+    <body>
+        <!-- Header Area Start -->
+        <header>
+            <h1>Travel Blog</h1>
+            <nav id="main-nav">
+                <a href="#about">About Me</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <!-- Header Area End -->
+
+        <!-- Blog Start -->
+        <main id="blog-container">
+            <!-- Blog Entry -->
+            <div class="blog-entry">
+                <div class="entry-wrapper">
+                    <h2 class="heading-blog-entry">My adventures</h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, provident...
+                    </p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/431862/400x400">
+                </div>
+            </div>
+            <!-- Blog Entry -->
+            <div class="blog-entry">
+                <div class="entry-wrapper">
+                    <h2 class="heading-blog-entry">My adventures</h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, provident...
+                    </p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/431862/401x400">
+                </div>
+            </div>
+            <!-- Blog Entry -->
+            <div class="blog-entry">
+                <div class="entry-wrapper">
+                    <h2 class="heading-blog-entry">My adventures</h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, provident...
+                    </p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/431862/402x400">
+                </div>
+            </div>
+            <!-- Blog Entry -->
+            <div class="blog-entry">
+                <div class="entry-wrapper">
+                    <h2 class="heading-blog-entry">My adventures</h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, provident...
+                    </p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/431862/403x400">
+                </div>
+            </div>
+            <!-- Blog Entry -->
+            <div class="blog-entry">
+                <div class="entry-wrapper">
+                    <h2 class="heading-blog-entry">My adventures</h2>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, provident...
+                    </p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="https://source.unsplash.com/collection/431862/404x400">
+                </div>
+            </div>
+        </main>
+        <!-- Blog End -->
+
+        <!-- About Start -->
+        <section id="about">
+            <h2 id="heading-about">About me</h2>
+            <div class="about-flex-container">
+                <img src="https://randomuser.me/api/portraits/women/94.jpg" alt="Portrait photo of Jane Doe">
+                <p class="about-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum molestias sapiente dolorum
+                    necessitatibus fugiat, incidunt enim animi ab, quae tempore ex esse perferendis voluptatum pariatur
+                    impedit aspernatur nemo possimus autem!
+                </p>
+            </div>
+        </section>
+        <!-- About End -->
+
+        <!-- Contact Start -->
+        <section id="contact">
+            <h2 class="heading-contact">
+                Contact me
+            </h2>
+            <p class="contact-content">
+                Press the following button to see the contact form:
+            </p>
+            <button id="contact-me-button">Contact me</button>
+
+            <!-- Form Start -->
+            <form action="" id="contact-form" novalidate>
+                <input type="text" name="fname" id="fname" placeholder="Your first name" aria-label="Your first name"
+                    minlength="3" maxLength="99" required>
+                <div id="name-error" class="error">Name not entered.</div>
+                <textarea name="message" id="message" rows="4" placeholder="Your message" aria-label="Your message"
+                    minlength="10" maxLength="99" required></textarea>
+                <div id="message-error" class="error">Message not entered.</div>
+                <button type="submit">Submit</button>
+            </form>
+            <!-- Form End -->
+        </section>
+        <!-- Contact End -->
+    </body>
+    <!-- Script -->
+    <script src="main.js"></script>
+</html>
