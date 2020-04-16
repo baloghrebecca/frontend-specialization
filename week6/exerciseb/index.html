@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Giphy API</title>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Source+Code+Pro&display=swap"
+            rel="stylesheet">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- JavaScript -->
+        <script src="main.js" defer> </script>
+    </head>
+
+    <body>
+
+        <main id="main-search">
+            <!-- Header -->
+            <header>
+                <div id="header-container">
+                    <h1>Giphy</h1>
+                    <h2>Search</h2>
+                    <div id="close">
+                        <a href="#"><img class="close-img" src="img/close.svg" alt="Close"></a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Section Gif -->
+            <section id="search-section">
+
+                <input type="text" name="search" id="search" placeholder="Enter a word and hit enter."
+                    aria-label="Search" autocomplete="off">
+                <form method="post" name="fileinfo" enctype='multipart/form-data'>
+                    <label for="gif">Select .gif or video file and click upload!
+                        <input type="file" id="gif" name="gif" accept="image/gif, video/mp4, video/webm"
+                            required></label>
+                    <p id="msg"></p>
+                    <button type="submit" id="btn">Upload</button>
+                </form>
+
+            </section>
+
+            <!-- Info Text -->
+            <section id="info">
+                <h2 id="description">Click enter for more gifs.</h2>
+
+            </section>
+
+            <section id="img">
+                <img id="gifs" src="">
+            </section>
+
+            <!-- Scroll Icon -->
+            <section id="scroll">
+                <img src="img/down-arrow.svg" alt="Scroll Down">
+            </section>
+
+        </main>
+
+        <main id="upload">
+
+        </main>
+
+    </body>
+
+</html>
