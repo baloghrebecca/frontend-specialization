@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--border-radius: 10px;
+	--section-width: 80%;
+	--invalid-color: maroon;
+}
+
+html, body {
+	margin: 0;
+	font-family: "Nunito", sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+main {
+	margin: 1rem;
+}
+
+.form-group {
+	margin: 1rem 0;
+}
+
+.request-error {
+	color: maroon;
+}
